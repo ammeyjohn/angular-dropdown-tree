@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>angular-dropdown-tree</title>
+	<link rel="stylesheet" href="..\bower_components\bootstrap\dist\css\bootstrap.min.css">
+	<link rel="stylesheet" href="..\bower_components\jstree\dist\themes\default\style.min.css">
+	<style>
+		body {
+			padding: 10px;
+		}
+	</style>
+</head>
+<body ng-app="dropdownTreeDemo" ng-controller="dropdownTreeDemoCtrl">
+
+	<div class="row">
+		<div class="col-md-6">
+			<ui-dropdown-tree dropdown-tree-data="data" />
+		</div>
+		<div class="col-md-6">
+			<ui-dropdown-tree />
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="col-md-12">
+			<button class="btn" ng-click="update()">Update</button>
+		</div>
+	</div>
+
+	<script type="text/javascript" src="..\bower_components\jquery\dist\jquery.min.js"></script>
+	<script type="text/javascript" src="..\bower_components\bootstrap\dist\js\bootstrap.js"></script>
+	<script type="text/javascript" src="..\bower_components\angular\angular.min.js"></script>
+	<script type="text/javascript" src="..\bower_components\jstree\dist\jstree.min.js"></script>
+	<script type="text/javascript" src="..\src\angular-dropdown-tree.js"></script>
+	<script type="text/javascript" src="app.js"></script>
+</body>
+</html>
