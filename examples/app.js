@@ -5,6 +5,8 @@
         .module('dropdownTreeDemo', ['uiDropdownTree'])
         .controller('dropdownTreeDemoCtrl', function($scope) {
 
+            $scope.selected = null;
+
             $scope.data = [{
                 "id": "ajson1",
                 "parent": "#",

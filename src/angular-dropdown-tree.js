@@ -20,6 +20,7 @@
             scope: {
                 treeData: '=dropdownTreeData'
             },
+            require: 'ngModel',
             templateUrl: '../src/template.html',
             controller: 'uiDropdownTreeCtrl',
             link: function link(scope, elm, attrs, controller) {
@@ -56,8 +57,9 @@
                     // 初始化树配置
                     tree
                         .on('changed.jstree', function(e, data) {
-                            var title = data.instance.get_node(data.selected).text;
-                            scope.dropdown_title = title;
+                        	var selected_node = data.instance.get_node(data.selected);
+                            scope.dropdown_title = selected_node.text;
+                         	controller.$setViewValue(selected_node.original);
                             scope.$apply();
                             $(elm).removeClass('open');
                         })
