@@ -16,15 +16,14 @@
 <body ng-app="dropdownTreeDemo" ng-controller="dropdownTreeDemoCtrl">
     <div class="row">
         <div class="col-md-6">
-            <ui-dropdown-tree dropdown-tree-data="data" ng-model="selected" />
+            <ui-dropdown-tree dropdown-tree-data="data" 
+            				  dropdown-tree-multiple="true" ng-model="selected" />
         </div>
-    </div>
-    <br />
-    <div class="row">
         <div class="col-md-6">
             <pre> {{selected}} </pre>
         </div>
     </div>
+    <br />
     <div class="row">
         <div class="col-md-12">
             <button class="btn" ng-click="update()">Update</button>
