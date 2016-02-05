@@ -31,7 +31,7 @@
             $scope.update = function() {
                 $scope.data = [
                     'Complex root node', {
-                        'text': 'Root node 2',
+                        'text': 'Root node 2hjkhlkj',
                         'state': {
                             'opened': true,
                             'selected': true
