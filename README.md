@@ -5,7 +5,7 @@ angular-dropdown-tree is an angular component that nested jsTree to bootstrap dr
 ## Features
 
 * Support full json format of jsTree
-* Support ngModel binding
+* Support ngModel binding, the selection will be bound to the scope
 * Support single and multiple selection
 
 ## Requirements
