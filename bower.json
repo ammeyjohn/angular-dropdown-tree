@@ -3,11 +3,11 @@
   "description": "",
   "main": "index.js",
   "authors": [
-    "Patrick (ammeyjohn@qq.com)"
+    "Patrick <ammeyjohn@qq.com>"
   ],
-  "license": "ISC",
+  "license": "MIT",
   "moduleType": [],
-  "homepage": "",
+  "homepage": "https://github.com/ammeyjohn/angular-dropdown-tree",
   "ignore": [
     "**/.*",
     "node_modules",
