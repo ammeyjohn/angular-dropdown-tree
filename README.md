@@ -36,3 +36,8 @@ Add the uiDropdownTree module as a dependency to your application module:
 var myAppModule = angular.module('MyApp', ['uiDropdownTree'])
 ```
 
+#### HTML View or Templates
+
+```html
+<ui-dropdown-tree dropdown-tree-data="data" dropdown-tree-multiple="true" ng-model="selected" />
+```
