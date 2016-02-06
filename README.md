@@ -1,6 +1,6 @@
 # angular-dropdown-tree
 
-angular-dropdown-tree is an Angular component that nested jsTree to bootstrap dropdown. 
+angular-dropdown-tree is an angular component that nested jsTree to bootstrap dropdown. 
 
 ## Features
 
@@ -55,14 +55,14 @@ Binding the tree data from the scope in your app controller. Below is the refere
 
 ```json
 {
-  id          : "string"
-  parent      : "string"
-  text        : "string"
-  icon        : "string"
-  state       : {
-    opened    : boolean
-    disabled  : boolean
-    selected  : boolean
+  "id"          : "string"
+  "parent"      : "string"
+  "text"        : "string"
+  "icon"        : "string"
+  "state"       : {
+    "opened"    : "boolean"
+    "disabled"  : "boolean"
+    "selected"  : "boolean"
   }
 }
 ```
