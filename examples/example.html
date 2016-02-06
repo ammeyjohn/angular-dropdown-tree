@@ -15,25 +15,23 @@
 
 <body ng-app="dropdownTreeDemo" ng-controller="dropdownTreeDemoCtrl">
     <div class="row">
-        <div class="col-md-6">
+        <div class="col-md-6 col-sm-6">
             <ui-dropdown-tree dropdown-tree-data="data" 
             				  dropdown-tree-multiple="true" ng-model="selected" />
         </div>
-        <div class="col-md-6">
+        <div class="col-md-6 col-sm-6">
             <pre> {{selected}} </pre>
         </div>
     </div>
-    <br />
-    <div class="row">
-        <div class="col-md-12">
-            <button class="btn" ng-click="update()">Update</button>
-        </div>
-    </div>
+    <button class="btn" ng-click="update()">Update</button>
+
     <script type="text/javascript" src="..\bower_components\jquery\dist\jquery.min.js"></script>
     <script type="text/javascript" src="..\bower_components\bootstrap\dist\js\bootstrap.js"></script>
     <script type="text/javascript" src="..\bower_components\angular\angular.min.js"></script>
     <script type="text/javascript" src="..\bower_components\jstree\dist\jstree.min.js"></script>
     <script type="text/javascript" src="..\src\angular-dropdown-tree.js"></script>
+    <script type="text/javascript" src="..\build\template.js"></script>
+    <!--<script type="text/javascript" src="..\dist\angular-dropdown-tree.min.js"></script>-->
     <script type="text/javascript" src="app.js"></script>
 </body>
 

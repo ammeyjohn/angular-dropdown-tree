@@ -4,13 +4,16 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "grunt build",
+    "start": "http-server"
   },
   "author": "Patrick <ammeyjohn@qq.com>",
   "license": "MIT",
   "devDependencies": {
     "grunt": "^0.4.5",
     "grunt-contrib-clean": "^0.7.0",
-    "grunt-contrib-uglify": "^0.11.1"
+    "grunt-contrib-concat": "^0.5.1",
+    "grunt-contrib-uglify": "^0.11.1",
+    "grunt-html2js": "^0.3.5"
   }
 }

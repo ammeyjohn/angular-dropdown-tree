@@ -18,7 +18,7 @@
                 treeData: '=dropdownTreeData'
             },
             require: 'ngModel',
-            templateUrl: '../src/template.html',
+            templateUrl: 'template.html',
             link: function link(scope, elm, attrs, controller) {
 
                 // 为每个控件生成唯一的id编号
