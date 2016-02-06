@@ -21,17 +21,17 @@ module.exports = function(grunt) {
                 banner: '/*! <%= pkg.name %> <ammeyjohn@qq.com> <%= grunt.template.today("yyyy-mm-dd") %> */\n'
             },
             build: {
-                src: 'build/combine.js',
+                src: 'dist/<%= pkg.name %>.js',
                 dest: 'dist/<%= pkg.name %>.min.js'
             }
         },
         concat: {
             options: {
-                separator: ';',
+                separator: ';\r\n\r\n',
             },
             dist: {
                 src: ['src/**/*.js', 'build/**/*.js'],
-                dest: 'build/combine.js',
+                dest: 'dist/<%= pkg.name %>.js',
             },
         },
     });

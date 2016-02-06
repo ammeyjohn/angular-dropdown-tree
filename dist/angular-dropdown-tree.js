@@ -128,4 +128,17 @@
     var module = angular.module('uiDropdownTree', []);
     module.directive('uiDropdownTree', uiDropdownTreeDirective);
 
-})(jQuery, angular)
+})(jQuery, angular);
+
+angular.module('uiDropdownTree').run(['$templateCache', function($templateCache) {
+  "use strict";
+  $templateCache.put("template.html",
+    "<div class=\"dropdown\">\n" +
+    "    <button id=\"{{dLabel}}\" type=\"button\" data-toggle=\"dropdown\" aria-haspopup=\"true\" aria-expanded=\"false\">\n" +
+    "        {{dropdown_title}}\n" +
+    "        <span class=\"caret\"></span>\n" +
+    "    </button>\n" +
+    "    <div class=\"dropdown-menu\" aria-labelledby=\"{{dLabel}}\"></div>\n" +
+    "</div>\n" +
+    "");
+}]);
