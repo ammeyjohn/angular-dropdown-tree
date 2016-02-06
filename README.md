@@ -55,17 +55,15 @@ Binding the tree data from the scope in your app controller. Below is the refere
 
 ```json
 {
-  id          : "string" // required
-  parent      : "string" // required
-  text        : "string" // node text
-  icon        : "string" // string for custom
+  id          : "string"
+  parent      : "string"
+  text        : "string"
+  icon        : "string"
   state       : {
-    opened    : boolean  // is the node open
-    disabled  : boolean  // is the node disabled
-    selected  : boolean  // is the node selected
-  },
-  li_attr     : {}  // attributes for the generated LI node
-  a_attr      : {}  // attributes for the generated A node
+    opened    : boolean
+    disabled  : boolean
+    selected  : boolean
+  }
 }
 ```
 
@@ -74,3 +72,10 @@ Enable the multiple selection mode. The checkbox will be shown on the jsTree and
 
 ## Useful commands
 
+### Building
+
+To build angular-dropdown-tree, you use the following command.
+
+    $ grunt build
+
+This will generate non-minified and minified JavaScript files in the `dist` directory.
