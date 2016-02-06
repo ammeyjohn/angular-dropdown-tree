@@ -24,9 +24,15 @@ angular-dropdown-tree is an Angular component that nested jsTree to bootstrap dr
 ### Load Script
 
 Load the script file: angular-dropdown-tree.js or angular-dropdown-tree.min.js in your application:
-```javascript
+
+```html
 <script type="text/javascript" src="angular-dropdown-tree.js"></script>
 ```
 
-## How to build
+### Code
+Add the uiDropdownTree module as a dependency to your application module:
+
+```js
+var myAppModule = angular.module('MyApp', ['uiDropdownTree'])
+```
 
