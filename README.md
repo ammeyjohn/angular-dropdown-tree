@@ -55,14 +55,14 @@ Binding the tree data from the scope in your app controller. Below is the refere
 
 ```json
 {
-  "id"          : "string"
-  "parent"      : "string"
-  "text"        : "string"
-  "icon"        : "string"
+  "id"          : "string",   // required
+  "parent"      : "string",
+  "text"        : "string",
+  "icon"        : "string",
   "state"       : {
-    "opened"    : "boolean"
-    "disabled"  : "boolean"
-    "selected"  : "boolean"
+    "opened"    : "boolean",
+    "disabled"  : "boolean",
+    "selected"  : "boolean",
   }
 }
 ```
